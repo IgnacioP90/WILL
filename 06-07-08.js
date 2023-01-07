@@ -23,7 +23,6 @@ function crearClasePersona() {
       // No debe retornar nada.
 
       // Tu código aca:
-      super(nombre,edad)
       datos={nombre:nombre, edad:edad}
       this.amigos.push(datos);
     }
