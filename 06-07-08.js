@@ -32,8 +32,7 @@ function crearClasePersona() {
       // No debe retornar nada.
 
       // Tu código aca:
-      let dato={hobby:hobby}
-      this.hobbies.push(dato)
+      this.hobbies.push(hobby)
     }
     getFriends() {
       // El método 'getFriends' debe retornar un arreglo con sólo los nombres del arreglo de amigos
@@ -79,8 +78,9 @@ function crearClasePersona() {
       // persona.getPromedioEdad() debería devolver 29 ya que (33 + 25) / 2 = 29
 
       // Tu código aca:
-      var edades= this.amigos.map(function (algo){
-        return this.amigos[algo].edad;
+      hola=Persona.amigos
+      var edades= hola.map(function (algo){
+        return hola[algo].edad;
       })
       let suma=0;
       for (let i = 0; i < edades.length; i++) {
