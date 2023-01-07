@@ -44,7 +44,7 @@ function crearClasePersona() {
       // Tu código aca:
       var friends=this.amigos.map(function(algo)
       {
-        return algo[this.nombre]
+        return algo.nombre
       })
       return friends
     }
