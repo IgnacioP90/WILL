@@ -79,7 +79,7 @@ function crearClasePersona() {
 
       // Tu código aca:
       var edades= this.amigos.map(function (algo){
-        return this.amigos[algo].edad;
+        return algo.edad;
       })
       let suma=0;
       for (let i = 0; i < edades.length; i++) {
