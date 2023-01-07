@@ -44,7 +44,7 @@ function crearClasePersona() {
       // Tu código aca:
       var friends=this.amigos.map(function(algo)
       {
-        return algo[nombre]
+        return algo[this.nombre]
       })
       return friends
     }
@@ -78,9 +78,8 @@ function crearClasePersona() {
       // persona.getPromedioEdad() debería devolver 29 ya que (33 + 25) / 2 = 29
 
       // Tu código aca:
-      hola=Persona.amigos
-      var edades= hola.map(function (algo){
-        return hola[algo].edad;
+      var edades= this.amigos.map(function (algo){
+        return this.amigos[algo].edad;
       })
       let suma=0;
       for (let i = 0; i < edades.length; i++) {
