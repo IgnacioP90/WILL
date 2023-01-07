@@ -24,7 +24,7 @@ function crearClasePersona() {
 
       // Tu código aca:
       super(nombre,edad)
-      datos={nombre:this.nombre, edad:this.edad}
+      datos={nombre:nombre, edad:edad}
       this.amigos.push(datos);
     }
 
