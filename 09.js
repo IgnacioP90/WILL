@@ -32,8 +32,7 @@ function filtrar(funcion) {
     {
       if(funcion(this[i]))
       {
-        elarray[cont].push(this[i])
-        cont++;
+        elarray.push(this[i])
       }
     }
     return elarray
